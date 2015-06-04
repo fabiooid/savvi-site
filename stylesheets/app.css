@@ -9886,8 +9886,12 @@ th.hide-for-touch {
     padding-top: 35vh;
   }
 }
+/* line 39, ../scss/savvistyle/_hero.scss */
+.logo img {
+  max-width: 300px;
+}
 
-/* line 44, ../scss/savvistyle/_hero.scss */
+/* line 47, ../scss/savvistyle/_hero.scss */
 .button__container .job-button {
   position: relative;
   right: -90px;
@@ -9900,7 +9904,7 @@ th.hide-for-touch {
   float: right;
   opacity: 0.5;
 }
-/* line 56, ../scss/savvistyle/_hero.scss */
+/* line 59, ../scss/savvistyle/_hero.scss */
 .button__container .job-button h3 {
   color: #FF3F00;
   text-align: center;
@@ -9911,7 +9915,7 @@ th.hide-for-touch {
   font-weight: 300;
 }
 
-/* line 68, ../scss/savvistyle/_hero.scss */
+/* line 71, ../scss/savvistyle/_hero.scss */
 .symbol {
   position: absolute;
   padding-top: 55px;
@@ -9920,7 +9924,7 @@ th.hide-for-touch {
 }
 
 @media only screen {
-  /* line 75, ../scss/savvistyle/_hero.scss */
+  /* line 78, ../scss/savvistyle/_hero.scss */
   .tag-line {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -9931,7 +9935,7 @@ th.hide-for-touch {
     float: none;
   }
 }
-/* line 80, ../scss/savvistyle/_hero.scss */
+/* line 83, ../scss/savvistyle/_hero.scss */
 .tag-line h3 {
   color: #FCFEFF;
   opacity: 0.45;
@@ -9942,7 +9946,7 @@ th.hide-for-touch {
   font-style: normal;
   font-weight: 200;
 }
-/* line 90, ../scss/savvistyle/_hero.scss */
+/* line 93, ../scss/savvistyle/_hero.scss */
 .tag-line h5 {
   color: #FCFEFF;
   opacity: 0.45;
@@ -9953,7 +9957,7 @@ th.hide-for-touch {
   font-style: normal;
   font-weight: 200;
 }
-/* line 99, ../scss/savvistyle/_hero.scss */
+/* line 102, ../scss/savvistyle/_hero.scss */
 .tag-line h5 a {
   color: #FF3F00;
 }
