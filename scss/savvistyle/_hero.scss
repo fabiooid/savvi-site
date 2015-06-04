@@ -30,11 +30,10 @@
 		padding-top: 20vh;
 	}
 	@media #{$medium-up} { 
-		@include grid-column($columns:8, $center:true);
 		padding-top: 30vh;
 	}
 	@media #{$large-up} {
-		padding-top: 40vh;
+		padding-top: 35vh;
 	}
 	text-align: center;
 	
@@ -73,16 +72,31 @@
 	z-index: 100;
 }
 
-.tag-line {
+.tag-line { 
+	@media #{$small-up} { 
+		@include grid-column($columns:12, $center:true);
+	}
+
 	h3 {
 		color: #FCFEFF;
 		opacity: 0.45;
 		text-align: center;
-		padding-top: 30px;
+		padding-top: 45px;
 		margin: 0px;
 		font-family: "azo-sans-web",sans-serif;
 		font-style: normal;
 		font-weight: 200;
+	}
+	h5 {
+		color: #FCFEFF;
+		opacity: 0.45;
+		text-align: center;
+		padding-top: 15px;
+		margin: 0px;
+		font-family: "azo-sans-web",sans-serif;
+		font-style: normal;
+		font-weight: 200;
+		a {color: #FF3F00}
 	}
 }
 
