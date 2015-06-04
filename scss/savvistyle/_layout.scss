@@ -14,3 +14,17 @@
    margin-right: auto;
    max-width: initial;
 }
+
+.container-outer {
+	@extend .fullWidth;
+	@extend .row;
+}
+
+.container-inner {
+	@media #{$small-up} { 
+		@include grid-column($columns:12, $center:true);
+	}
+	@media #{$large-up} {
+		width: 960px
+	}
+}

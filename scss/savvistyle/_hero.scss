@@ -4,41 +4,89 @@
 
 
 
-//-------scafolding
-
-
-
-.hero-outer {
-	@extend .fullWidth;
-	@extend .row;
+.hero {
+	@extend .container-outer;
 	height: 100vh; 
 	background: url(../img/pattern.png), url(../img/gradient.png), url(../img/savvi-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 90%;
 	background-size: cover;
+}
 
-	.hero-outer__columns {
-		@media #{$small-up} { 
-			@include grid-column($columns:12, $center:true);
-		}
-		@media #{$large-up} {
-			width: 960px
-		}
+
+.hero__inner {
+	@extend .container-inner
+}
+
+
+.logo__container {
+	@extend .row;
+}
+
+
+.logo {
+	@media #{$small-up} { 
+		@include grid-column($columns:10, $center:true);
+		padding-top: 20vh;
+	}
+	@media #{$medium-up} { 
+		@include grid-column($columns:8, $center:true);
+		padding-top: 30vh;
+	}
+	@media #{$large-up} {
+		padding-top: 40vh;
+	}
+	text-align: center;
+	
+}
+
+.button__container {
+	@extend .row;
+	.job-button {
+		position: relative;
+		right: -90px;
+		margin-top: 55px;
+		width: 50px;
+		border: #FF3F00 solid 2px;
+		border-radius: 10px;
+		width: 130px;
+		height: 45px;
+		float: right;
+		opacity: 0.5;
+
+		h3 {
+			color: #FF3F00;
+			text-align: center;
+			line-height: 40px;
+			margin: 0px;
+			font-family: "azo-sans-web",sans-serif;
+			font-style: normal;
+			font-weight: 300;
+		};
 	}
 }
 
-.hero-inner {
-	@extend .row;
-
-	.hero-inner__columns {
-		@include grid-column($columns:12, $center:true);
-		}
+.symbol {
+	position: absolute;
+	padding-top: 55px;
+	padding-left: 20px;
+	z-index: 100;
 }
 
-.image__container {
-	text-align: center;
-	padding-top: 360px;
+.tag-line {
+	h3 {
+		color: #FCFEFF;
+		opacity: 0.45;
+		text-align: center;
+		padding-top: 30px;
+		margin: 0px;
+		font-family: "azo-sans-web",sans-serif;
+		font-style: normal;
+		font-weight: 200;
+	}
 }
+
+
 
 
 
