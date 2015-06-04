@@ -1,0 +1,48 @@
+/*
+ * _hero.scss
+ */
+
+
+
+//-------scafolding
+
+
+
+.hero-outer {
+	@extend .fullWidth;
+	@extend .row;
+	height: 100vh; 
+	background: url(../img/pattern.png), url(../img/gradient.png), url(../img/savvi-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 90%;
+	background-size: cover;
+
+	.hero-outer__columns {
+		@media #{$small-up} { 
+			@include grid-column($columns:12, $center:true);
+		}
+		@media #{$large-up} {
+			width: 960px
+		}
+	}
+}
+
+.hero-inner {
+	@extend .row;
+
+	.hero-inner__columns {
+		@include grid-column($columns:12, $center:true);
+		}
+}
+
+.image__container {
+	text-align: center;
+	padding-top: 360px;
+}
+
+
+
+
+
+
+
